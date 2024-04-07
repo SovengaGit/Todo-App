@@ -16,7 +16,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
@@ -38,7 +38,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
@@ -63,7 +63,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
@@ -90,7 +90,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
