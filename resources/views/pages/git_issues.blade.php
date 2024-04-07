@@ -4,7 +4,7 @@
     <div class="jumbotron text-center">
         
         <li><button class="btn btn-success"><a href="/github/create">Create Git Issue</a></button></li>
-                    
+                @if ($issues->count() !== 0)
                     @foreach ($issues as $data)
                     <div class="well">
                     <h2>{{$data->title}}</h2>
@@ -26,7 +26,11 @@
                     </div>
                     </div>
                     @endforeach
-
+                @else
+                    <tr>
+                        <td colspan="5">There are no open issues</td>
+                    </tr>
+                @endif
    
 </div>
 @endsection

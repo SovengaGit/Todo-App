@@ -114,7 +114,10 @@ class ToDoController extends Controller
      */
     public function destroy($id)
     {
+        //get todo item by it's ID
         $todo = Todo::find($id);
+        //to avoid foreign deletion we compair the user_id and logged in user id
+        //
         if ($todo->user_id === Auth::id()) {
             $this->todoRepository->deleteToDoTask($id);
             return redirect('/todo')->with('success', 'Item Deleted Successfully');

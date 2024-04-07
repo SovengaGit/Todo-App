@@ -2,12 +2,19 @@
 
 namespace App\Http;
 
+/**
+ * Class git_api_helper used to simplify CURL operations 
+ */
 class git_api_helper
 {
+
+    /**
+     * Method used to get all issues
+     */
     public function getAllIssues()
     {
+        //hardcoded the url since its only issues endpoint
         $url = "https://api.github.com/repos/SovengaGit/Todo-App/issues";
-        //$assignees = array("SovengaGit");
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -24,8 +31,12 @@ class git_api_helper
         curl_close($curl);
         return $result;
     }
+    /**
+     * Method used to get an issue by passing ID issues
+     */
     public function getIssue($id)
     {
+        //hardcoded the url since its only issues endpoint
         $url = "https://api.github.com/repos/SovengaGit/Todo-App/issues";
         //$assignees = array("SovengaGit");
         $labels = array("todo app bug");
@@ -46,8 +57,14 @@ class git_api_helper
         curl_close($curl);
         return json_encode($result);
     }
+    /**
+     * Method used to create a GITHUB issue
+     */
     public function createIssue($title, $body, $assignees)
     {
+        if (empty($assignees)) {
+            $assignees = "SovengaGit";
+        }
         $url = "https://api.github.com/repos/SovengaGit/Todo-App/issues";
         //$assignees = array("SovengaGit");
         $labels = array("todo app bug");
@@ -71,6 +88,9 @@ class git_api_helper
         curl_close($curl);
         return json_encode($result);
     }
+    /**
+     * Method used to update an issue to closed status
+     */
     public function updateIssue($owner, $repo, $issue_number, $state)
     {
         $owner = "SovengaGit";
