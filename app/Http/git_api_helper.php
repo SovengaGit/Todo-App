@@ -23,7 +23,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
@@ -49,7 +49,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
@@ -80,7 +80,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
@@ -89,7 +89,7 @@ class git_api_helper
         return json_encode($result);
     }
     /**
-     * Method used to update an issue to closed status
+     * Method used to update an issue to closed
      */
     public function updateIssue($owner, $repo, $issue_number, $state)
     {
@@ -110,7 +110,7 @@ class git_api_helper
             CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
-                'Authorization: Bearer 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',
+                'Authorization: Bearer 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',
                 'Accept: application/vnd.github+json', 'user-agent: node.js', 'X-GitHub-Api-Version: 2022-11-28'
             )
         );
