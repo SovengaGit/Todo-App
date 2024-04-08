@@ -12,7 +12,7 @@
 Running the application is very easy if below steps are followed correctly
 - It is assumed that Apache is installed to run PHP application
 - First update composer.json file to get the dependencies required to run the app
-- The application uses MYSQL database - ensure the DB server is installed 
+- The application uses MYSQL database - ensure the DB server is installed - simply modify the .env file to match your database credentials
 - When finished with composer, run php artisan migrate to create the database structure
 - Edit the .env file to match your database credentials
 - You can artisan serve the application to test in dev
