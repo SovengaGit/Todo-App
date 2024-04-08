@@ -1,4 +1,4 @@
-#Build Image
+#Build Image - specify php version
 FROM php:7.4-apache
 #install dependencies - depending on the App
 #You may have additional dependencies
