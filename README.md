@@ -14,7 +14,6 @@ Running the application is very easy if below steps are followed correctly
 - First update composer.json file to get the dependencies required to run the app
 - The application uses MYSQL database - ensure the DB server is installed 
 - When finished with composer, run php artisan migrate to create the database structure
-- You may be asked to verify the application on the browser be fore login can appear
 - Edit the .env file to match your database credentials
 - You can artisan serve the application to test in dev
 
