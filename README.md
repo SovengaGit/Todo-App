@@ -16,3 +16,5 @@ Running the application is very easy if below steps are followed correctly
 - When finished with composer, run php artisan migrate to create the database structure
 - You may be asked to verify the application on the browser be fore login can appear
 - Edit the .env file to match your database credentials
+- You can artisan serve the application to test in dev
+- To deploy in Docker container locally type -> docker run -p 8080:80 demo/laravel:01
