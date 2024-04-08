@@ -22,4 +22,4 @@ Running the application is very easy if below steps are followed correctly
 - We create Dockerfile with contents to create a custom image
 - By using the docker hub image we can customize it to our website based on one from docker hub
 - Build the image and copy all local files to docker hub image using commands as defined in the Dockerfile
-- To deploy in Docker container locally type -> docker run -p 80:80 demo/laravel:01
+- To deploy in Docker container locally type -> docker run -p 80:80 demo/laravel:01 and you can access the app on localhost:80
